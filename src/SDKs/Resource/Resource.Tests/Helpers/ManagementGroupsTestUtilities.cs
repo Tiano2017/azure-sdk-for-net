@@ -11,7 +11,7 @@ namespace Resource.Tests.Helpers
     public static class ManagementGroupsTestUtilities
     {
 
-        public static ManagementGroupsAPIClient GetManagementGroupsApiClient(MockContext context,
+        public static ManagementGroupsAPI GetManagementGroupsApiClient(MockContext context,
             RecordedDelegatingHandler handler = null)
         {
             if (handler != null)
@@ -19,7 +19,7 @@ namespace Resource.Tests.Helpers
                 handler.IsPassThrough = true;
             }
 
-            var client = context.GetServiceClient<ManagementGroupsAPIClient>(
+            var client = context.GetServiceClient<ManagementGroupsAPI>(
                 handlers: handler ?? new RecordedDelegatingHandler {StatusCodeToReturn = HttpStatusCode.OK});
 
             return client;
