@@ -127,7 +127,7 @@ namespace Microsoft.Azure.Management.ResourceManager
             }
             // Construct URL
             var _baseUrl = Client.BaseUri.AbsoluteUri;
-            var _url = new System.Uri(new System.Uri(_baseUrl + (_baseUrl.EndsWith("/") ? "" : "/")), "subscriptions/{subscriptionId}/deployments/{deploymentName}/operations/{operationId}").ToString();
+            var _url = new System.Uri(new System.Uri(_baseUrl + (_baseUrl.EndsWith("/") ? "" : "/")), "subscriptions/{subscriptionId}/providers/Microsoft.Resources/deployments/{deploymentName}/operations/{operationId}").ToString();
             _url = _url.Replace("{deploymentName}", System.Uri.EscapeDataString(deploymentName));
             _url = _url.Replace("{operationId}", System.Uri.EscapeDataString(operationId));
             _url = _url.Replace("{subscriptionId}", System.Uri.EscapeDataString(Client.SubscriptionId));
@@ -334,7 +334,7 @@ namespace Microsoft.Azure.Management.ResourceManager
             }
             // Construct URL
             var _baseUrl = Client.BaseUri.AbsoluteUri;
-            var _url = new System.Uri(new System.Uri(_baseUrl + (_baseUrl.EndsWith("/") ? "" : "/")), "subscriptions/{subscriptionId}/deployments/{deploymentName}/operations").ToString();
+            var _url = new System.Uri(new System.Uri(_baseUrl + (_baseUrl.EndsWith("/") ? "" : "/")), "subscriptions/{subscriptionId}/providers/Microsoft.Resources/deployments/{deploymentName}/operations").ToString();
             _url = _url.Replace("{deploymentName}", System.Uri.EscapeDataString(deploymentName));
             _url = _url.Replace("{subscriptionId}", System.Uri.EscapeDataString(Client.SubscriptionId));
             List<string> _queryParameters = new List<string>();

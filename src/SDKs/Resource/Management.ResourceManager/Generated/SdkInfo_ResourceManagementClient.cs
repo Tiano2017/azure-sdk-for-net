@@ -24,6 +24,7 @@ namespace Microsoft.Azure.Management.ResourceManager
                 new Tuple<string, string, string>("ResourceManagementClient", "ResourceGroups", "2018-05-10"),
                 new Tuple<string, string, string>("ResourceManagementClient", "Resources", "2018-05-10"),
                 new Tuple<string, string, string>("ResourceManagementClient", "Tags", "2018-05-10"),
+                new Tuple<string, string, string>("Resources", "DeploymentOperations", "2018-05-10"),
                 new Tuple<string, string, string>("Resources", "Deployments", "2018-05-10"),
               }.AsEnumerable();
           }
