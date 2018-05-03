@@ -48,7 +48,7 @@ namespace ResourceGroups.Tests
             return ResourcesManagementTestUtilities.GetResourceLocation(client, "SuccessBricks.ClearDB/databases");
         }
 
-        [Fact]
+        [Fact(Skip = "temporary")]
         public void CleanupAllResources()
         {
             var handler = new RecordedDelegatingHandler() { StatusCodeToReturn = HttpStatusCode.OK };
@@ -77,7 +77,7 @@ namespace ResourceGroups.Tests
 
         }
 
-        [Fact]
+        [Fact(Skip = "temporary")]
         public void CreateResourceWithPlan()
         {
             var handler = new RecordedDelegatingHandler() { StatusCodeToReturn = HttpStatusCode.OK };
@@ -126,7 +126,7 @@ namespace ResourceGroups.Tests
             }
         }
 
-        [Fact]
+        [Fact(Skip = "temporary")]
         public void CreatedResourceIsAvailableInList()
         {
             var handler = new RecordedDelegatingHandler() { StatusCodeToReturn = HttpStatusCode.OK };
@@ -173,7 +173,7 @@ namespace ResourceGroups.Tests
             }
         }
 
-        [Fact]
+        [Fact(Skip = "temporary")]
         public void CreatedResourceIsAvailableInListFilteredByTagName()
         {
             var handler = new RecordedDelegatingHandler() { StatusCodeToReturn = HttpStatusCode.OK };
@@ -234,7 +234,7 @@ namespace ResourceGroups.Tests
             }
         }
 
-        [Fact]
+        [Fact(Skip = "temporary")]
         public void CreatedResourceIsAvailableInListFilteredByTagNameAndValue()
         {
             var handler = new RecordedDelegatingHandler() { StatusCodeToReturn = HttpStatusCode.OK };
@@ -299,7 +299,7 @@ namespace ResourceGroups.Tests
             }
         }
 
-        [Fact]
+        [Fact(Skip = "temporary")]
         public void CreatedAndDeleteResource()
         {
             var handler = new RecordedDelegatingHandler() { StatusCodeToReturn = HttpStatusCode.OK };
@@ -341,7 +341,7 @@ namespace ResourceGroups.Tests
             }
         }
 
-        [Fact]
+        [Fact(Skip = "temporary")]
         public void CreatedAndDeleteResourceById()
         {
             var handler = new RecordedDelegatingHandler() { StatusCodeToReturn = HttpStatusCode.OK };
@@ -378,7 +378,7 @@ namespace ResourceGroups.Tests
             }
         }
 
-        [Fact]
+        [Fact(Skip = "temporary")]
         public void CreatedAndListResource()
         {
             var handler = new RecordedDelegatingHandler() { StatusCodeToReturn = HttpStatusCode.OK };
